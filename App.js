@@ -23,6 +23,14 @@ export default function App() {
     setDisplayValue('0');
   }
 
+  const handleValueChanger = () => {
+    let numberValue = Number.parseFloat(displayValue);
+
+    numberValue *= -1;
+
+    setDisplayValue(numberValue.toString())
+  }
+
   const handleClearCalculator = () => {
     setDisplayValue('0');
     setOperand(null);
