@@ -85,6 +85,8 @@ export default function App() {
         <CalculatorButton value={'AC'} onPress={handleClearCalculator} btnColor={'#a5a5a5'} textColor={'#000'}/>
         <CalculatorButton value={'+/-'} btnColor={'#a5a5a5'} textColor={'#000'}/>
         <CalculatorButton value={'%'} btnColor={'#a5a5a5'} textColor={'#000'}/>
+        <CalculatorButton value={'+/-'} onPress={handleValueChanger} btnColor={'#a5a5a5'} textColor={'#000'}/>
+        <CalculatorButton value={'%'} onPress={handlePercentageConverter} btnColor={'#a5a5a5'} textColor={'#000'}/>
         <CalculatorButton value={'÷'} onPress={() => handleOperatorPress('÷')} btnColor={'#ff9f0a'}/>
         <CalculatorButton value={'7'} onPress={() => handleDigitPress('7')} btnColor={'#333333'}/>
         <CalculatorButton value={'8'} onPress={() => handleDigitPress('8')} btnColor={'#333333'}/>
