@@ -42,6 +42,14 @@ export default function App() {
       setDisplayValue(displayValue + '.');
   }
 
+  const handlePercentageConverter = () => {
+    let numberValue = Number.parseFloat(displayValue);
+
+    numberValue /= 100;
+
+    setDisplayValue(numberValue.toString())
+  }
+
   const handleEqualsPress =() => {
     const currentOperend = parseFloat(displayValue);
     let result;
