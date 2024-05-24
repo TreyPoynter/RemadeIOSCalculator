@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import CalculatorButton from './components/CalculatorButton';
 import { useState } from 'react';
