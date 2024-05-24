@@ -17,7 +17,6 @@ export default function App() {
   }
 
   const handleOperatorPress = (op) => {
-    console.log(op);
     setOperator(op);
     setOperand(parseFloat(displayValue));
     setDisplayValue('0');
@@ -83,8 +82,6 @@ export default function App() {
       </View>
       <View style={styles.buttonContainer}>
         <CalculatorButton value={'AC'} onPress={handleClearCalculator} btnColor={'#a5a5a5'} textColor={'#000'}/>
-        <CalculatorButton value={'+/-'} btnColor={'#a5a5a5'} textColor={'#000'}/>
-        <CalculatorButton value={'%'} btnColor={'#a5a5a5'} textColor={'#000'}/>
         <CalculatorButton value={'+/-'} onPress={handleValueChanger} btnColor={'#a5a5a5'} textColor={'#000'}/>
         <CalculatorButton value={'%'} onPress={handlePercentageConverter} btnColor={'#a5a5a5'} textColor={'#000'}/>
         <CalculatorButton value={'÷'} onPress={() => handleOperatorPress('÷')} btnColor={'#ff9f0a'}/>
